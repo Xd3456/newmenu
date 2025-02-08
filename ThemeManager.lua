@@ -13,7 +13,7 @@ local ThemeManager = {} do
 		['Tokyo Night'] 	= { 6, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"191925","AccentColor":"6759b3","BackgroundColor":"16161f","OutlineColor":"323232"}') },
 		['Ubuntu'] 			= { 7, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"3e3e3e","AccentColor":"e2581e","BackgroundColor":"323232","OutlineColor":"191919"}') },
 		['Quartz'] 			= { 8, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"232330","AccentColor":"426e87","BackgroundColor":"1d1b26","OutlineColor":"27232f"}') },
-		['Locky Star'] 		= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"17172b","AccentColor":"7287fd","BackgroundColor":"010a17","OutlineColor":"1c2248"}') },
+		['Locker Star'] 		= { 9, httpService:JSONDecode('{"FontColor":"ffffff","MainColor":"17172b","AccentColor":"7287fd","BackgroundColor":"010a17","OutlineColor":"1c2248"}') },
 	}
 
 	function ThemeManager:ApplyTheme(theme)
@@ -50,7 +50,7 @@ local ThemeManager = {} do
 	end
 
 	function ThemeManager:LoadDefault()		
-		local theme = 'Locky Star'
+		local theme = 'Locker Star'
 		local content = isfile(self.Folder .. '/themes/default.txt') and readfile(self.Folder .. '/themes/default.txt')
 
 		local isDefault = true
